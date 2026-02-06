@@ -5,6 +5,18 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
+      title: "RAVE – Personal Assistant Bot",
+      status: "Completed",
+      description: [
+        "Built an AI-powered personal assistant that sends daily WhatsApp messages to guide through morning to-do lists.",
+        "Integrated with WhatsApp Business API for automated reminder and calendar notifications.",
+        "Developed conversational flows using Voiceflow for natural user interactions.",
+        "Implemented backend automation using FastAPI and n8n for agentic AI workflows.",
+        "Applied LangChain for enhanced natural language processing and task management.",
+      ],
+      technologies: ["Voiceflow", "WhatsApp API", "FastAPI", "LangChain", "n8n"],
+    },
+    {
       title: "Assignment Tracking Software",
       status: "In Progress",
       description: [
