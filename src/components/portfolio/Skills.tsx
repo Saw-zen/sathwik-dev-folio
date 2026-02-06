@@ -34,9 +34,9 @@ const Skills = () => {
       color: "from-orange-500/20 to-amber-500/20",
     },
     {
-      title: "AI / ML",
+      title: "AI / ML & Automation",
       icon: Brain,
-      skills: ["Scikit-learn (Beginner)", "TensorFlow (Beginner)", "LangChain", "Voiceflow", "n8n"],
+      skills: ["Scikit-learn (Beginner)", "TensorFlow (Beginner)", "LangChain", "Voiceflow", "n8n", "FastAPI"],
       color: "from-pink-500/20 to-rose-500/20",
     },
     {
