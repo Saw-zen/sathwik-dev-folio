@@ -1,5 +1,3 @@
-import { Languages as LanguagesIcon } from "lucide-react";
-
 const Languages = () => {
   const languages = [
     { name: "English", level: "Fluent" },
@@ -12,7 +10,7 @@ const Languages = () => {
   ];
 
   return (
-    <section id="languages" className="py-20 sm:py-24 bg-card/50">
+    <section id="languages" className="section-padding bg-card/30">
       <div className="section-container">
         <h2 className="section-title">Languages</h2>
         
@@ -20,12 +18,11 @@ const Languages = () => {
           {languages.map((lang, index) => (
             <div
               key={index}
-              className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-lg border border-border/50"
+              className="px-4 py-2.5 bg-card border border-border/50 rounded-lg"
             >
-              <LanguagesIcon className="w-4 h-4 text-primary" />
-              <span className="text-foreground font-medium">{lang.name}</span>
+              <span className="text-foreground font-medium text-sm">{lang.name}</span>
               {lang.level && (
-                <span className="text-xs text-primary font-medium">
+                <span className="text-xs text-primary font-medium ml-2">
                   ({lang.level})
                 </span>
               )}

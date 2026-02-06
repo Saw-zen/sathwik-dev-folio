@@ -19,15 +19,15 @@ const Skills = () => {
       skills: [
         "MySQL",
         "MongoDB",
-        "SQL Queries and Joins",
-        "Data Cleaning and Preprocessing",
+        "SQL Queries & Joins",
+        "Data Cleaning & Preprocessing",
         "Basic Data Visualization",
       ],
     },
     {
       title: "Tools & Platforms",
       icon: Wrench,
-      skills: ["Git & GitHub", "Visual Studio Code", "Eclipse", "Jupyter Notebook"],
+      skills: ["Git", "GitHub", "Visual Studio Code", "Eclipse", "Jupyter Notebook"],
     },
     {
       title: "AI / ML",
@@ -38,24 +38,24 @@ const Skills = () => {
       title: "Core Concepts",
       icon: Lightbulb,
       skills: [
-        "Object-Oriented Programming (OOP)",
+        "Object-Oriented Programming",
         "Problem Solving",
-        "Debugging and Testing",
+        "Debugging & Testing",
         "Version Control",
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-20 sm:py-24">
+    <section id="skills" className="section-padding">
       <div className="section-container">
         <h2 className="section-title">Technical Skills</h2>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="card-hover border-border/50">
+            <Card key={index} className="card-hover border-border/50 bg-card/50">
               <CardHeader className="pb-3">
-                <CardTitle className="flex items-center gap-3 text-lg">
+                <CardTitle className="flex items-center gap-3 text-base font-semibold">
                   <category.icon className="w-5 h-5 text-primary" />
                   {category.title}
                 </CardTitle>
@@ -67,7 +67,7 @@ const Skills = () => {
                       key={skillIndex} 
                       className="flex items-center gap-2 text-muted-foreground text-sm"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0" />
+                      <span className="w-1 h-1 rounded-full bg-primary/60 flex-shrink-0" />
                       {skill}
                     </li>
                   ))}
