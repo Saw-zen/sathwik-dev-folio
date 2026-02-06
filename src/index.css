@@ -120,6 +120,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
 
   body {
@@ -127,7 +128,12 @@
   }
 
   ::selection {
-    @apply bg-primary/20 text-foreground;
+    @apply bg-primary/30 text-foreground;
+  }
+
+  /* Smooth scroll offset for fixed navbar */
+  section[id] {
+    scroll-margin-top: 5rem;
   }
 }
 
