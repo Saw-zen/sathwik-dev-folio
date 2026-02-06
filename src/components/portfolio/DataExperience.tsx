@@ -21,7 +21,7 @@ const DataExperience = () => {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Main card */}
           <Card className="card-hover border-border/50 bg-card/70 backdrop-blur-sm overflow-hidden">
-            <div className="h-1 bg-gradient-to-r from-cyan-500/50 via-blue-500/50 to-purple-500/50" />
+            <div className="h-1 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
             
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3">
