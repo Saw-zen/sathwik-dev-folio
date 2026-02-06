@@ -1,45 +1,47 @@
 import { Trophy, Clock, Users } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 
 const Extracurricular = () => {
   const activities = [
     {
       icon: Trophy,
       title: "Coding Competitions",
-      description: "Active participation in coding competitions and hackathons.",
+      description: "Participation in coding competitions and hackathons",
     },
     {
       icon: Clock,
       title: "Time Management",
-      description: "Strong time management and discipline developed through regular fitness training.",
+      description: "Strong time management and discipline through fitness training",
     },
     {
       icon: Users,
       title: "Team Collaboration",
-      description: "Team coordination and strategic thinking in collaborative environments.",
+      description: "Team collaboration and strategic thinking",
     },
   ];
 
   return (
-    <section id="extracurricular" className="py-20 sm:py-24">
+    <section id="extracurricular" className="section-padding">
       <div className="section-container">
-        <h2 className="section-title">Extracurricular & Soft Skills</h2>
+        <h2 className="section-title">Extracurricular & Professional Traits</h2>
         
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-3 gap-5">
           {activities.map((activity, index) => (
-            <Card key={index} className="card-hover border-border/50">
-              <CardContent className="pt-6 text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <activity.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">
+            <div 
+              key={index} 
+              className="flex items-start gap-4 p-5 rounded-lg border border-border/50 bg-card/30"
+            >
+              <div className="p-2 rounded-lg bg-primary/10 flex-shrink-0">
+                <activity.icon className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-1 text-sm">
                   {activity.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {activity.description}
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

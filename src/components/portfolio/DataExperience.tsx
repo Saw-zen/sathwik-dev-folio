@@ -3,24 +3,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const DataExperience = () => {
   const experiences = [
-    "Performed data cleaning and preprocessing using Python.",
-    "Wrote SQL queries to extract and analyze structured data.",
-    "Conducted basic exploratory data analysis (EDA) using Jupyter Notebook.",
-    "Interpreted data trends to support application logic and technical decision-making.",
+    "Data cleaning and preprocessing using Python",
+    "SQL-based data extraction and analysis",
+    "Exploratory Data Analysis (EDA) using Jupyter Notebook",
+    "Interpretation of trends and patterns to support application logic",
   ];
 
   return (
-    <section id="experience" className="py-20 sm:py-24">
+    <section id="experience" className="section-padding">
       <div className="section-container">
         <h2 className="section-title">Data Analysis Experience</h2>
         
-        <Card className="card-hover border-border/50">
-          <CardHeader>
+        <Card className="card-hover border-border/50 bg-card/50">
+          <CardHeader className="pb-4">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-primary/10">
+              <div className="p-2.5 rounded-lg bg-primary/10">
                 <BarChart3 className="w-5 h-5 text-primary" />
               </div>
-              <CardTitle className="text-xl text-foreground">
+              <CardTitle className="text-xl font-semibold text-foreground">
                 Data Analysis – Academic & Project Work
               </CardTitle>
             </div>
@@ -31,9 +31,11 @@ const DataExperience = () => {
               {experiences.map((exp, index) => (
                 <li 
                   key={index} 
-                  className="flex items-start gap-3 text-muted-foreground"
+                  className="flex items-center gap-3 text-muted-foreground"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="w-5 h-5 rounded-full border-2 border-primary/40 flex items-center justify-center text-xs text-primary font-medium flex-shrink-0">
+                    {index + 1}
+                  </span>
                   {exp}
                 </li>
               ))}
