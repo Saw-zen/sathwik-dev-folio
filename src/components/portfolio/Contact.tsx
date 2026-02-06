@@ -60,7 +60,7 @@ const Contact = () => {
 
               {/* Decorative element */}
               <div className="mt-8 flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 <span className="text-sm text-muted-foreground">Available for opportunities</span>
               </div>
             </div>
